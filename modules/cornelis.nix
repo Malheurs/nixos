@@ -30,13 +30,14 @@
       #quodlibet # GTK-based audio player written in Python, using the Mutagen tagging library
 
       ### Utilities ###
+      bottles-unwrapped # An easy-to-use wineprefix manager
       gimp # The GNU Image Manipulation Program
-      #obsidian # A powerful knowledge base that works on top of a local folder of plain text Markdown files
+      obsidian # A powerful knowledge base that works on top of a local folder of plain text Markdown files
       media-downloader # Youtube Downloader
       mkvtoolnix # MKV container tool
       qbittorrent # Featureful free software BitTorrent client
       warp # Sharing files tools
-      whalebird # Electron based Mastodon, Pleroma and Misskey client for Windows, Mac and Linux
+      #whalebird # Electron based Mastodon, Pleroma and Misskey client for Windows, Mac and Linux
       wootility # A customization and management software for Wooting keyboards
       wooting-udev-rules # udev rules that give NixOS permission to communicate with Wooting keyboards
       zathura # PDF Reader

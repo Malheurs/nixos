@@ -89,9 +89,9 @@
   # networking.firewall.enable = false;
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "fr";
-    xkbVariant = "us";
+    variant = "us";
   };
 
   # Configure console keymap
@@ -137,16 +137,16 @@
 
   # Fonts
   fonts.packages = with pkgs; [
-    jetbrains-mono # A typeface made for developers
-    nerdfonts # Needed for lot of packages
-    nerd-font-patcher # Font patcher to generate Nerd font
+    fira-code # Monospace font with programming ligatures
     font-awesome_5 # Font for orignal Waybar
     font-awesome_4
-    font-awesome
-    line-awesome
-    fira-code # Monospace font with programming ligatures
-    weather-icons # Weather icons
     google-fonts # Font files available from Google Fonts
+    hack-font # A typeface designed for source code
+    jetbrains-mono # A typeface made for developers
+    line-awesome # Replace Font Awesome with modern line icons
+    nerdfonts # Needed for lot of packages
+    nerd-font-patcher # Font patcher to generate Nerd font
+    weather-icons # Weather icons
   ];
 
   # USB Automounting
@@ -269,6 +269,7 @@
     ### Terminal utils ###
     bash # Shell for convenience with downloaded script & other
     lazygit # Simple terminal UI for git commands
+    gitui # Blazing fast terminal-ui for Git written in Rust
     git-ignore # Fetch .gitignore templates from gitignore.io
     git-credential-manager # A secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services
     pass-git-helper # A git credential helper interfacing with pass, the standard unix password manager
