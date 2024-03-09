@@ -27,16 +27,16 @@
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     # package = config.boot.kernelPackages.nvidiaPackages.stable;       # Stable version
     # package = config.boot.kernelPackages.nvidiaPackages.beta;         # Beta version
-    package = config.boot.kernelPackages.nvidiaPackages.production;   # Production version 535
+    # package = config.boot.kernelPackages.nvidiaPackages.production;   # Production version 535
     # package = config.boot.kernelPackages.nvidiaPackages.vulkan_beta;  # Vulkan version 535 other
     ### To pin a specific package     ###
     #   525 OK / 535 SHIT / 545 Hope    #
     ###                               ###
-    #package = (config.boot.kernelPackages.nvidiaPackages.stable.overrideAttrs {
-    #  src = pkgs.fetchurl {
-    #    url = "https://download.nvidia.com/XFree86/Linux-x86_64/525.147.05/NVIDIA-Linux-x86_64-525.147.05.run";
-    #    sha256 = "sha256-Q1GD6lRcfhLjBE15htoHdYozab7+fuUZ6zsGPUrz/vE=";
-    #  };
-    #});
+    package = (config.boot.kernelPackages.nvidiaPackages.stable.overrideAttrs {
+      src = pkgs.fetchurl {
+        url = "https://download.nvidia.com/XFree86/Linux-x86_64/535.161.07/NVIDIA-Linux-x86_64-535.161.07.run";
+        sha256 = "sha256-7cUn8dz6AhKjv4FevzAtRe+WY4NKQeEahR3TjaFZqM0";
+      };
+    });
   };
 }
