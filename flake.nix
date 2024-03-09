@@ -43,8 +43,8 @@
         cornelis = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
-            #/home/cornelis/nixos/home.nix
-            /home/cornelis/nixos/home/configurations/cornelis.nix
+            /home/cornelis/nixos/home.nix
+            #/home/cornelis/nixos/home/configurations/cornelis.nix
           ];
         };
       };
